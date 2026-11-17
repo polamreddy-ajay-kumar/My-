@@ -18,6 +18,18 @@ $('craftText').innerHTML=C.craftText;
 $('emailBtn').textContent=C.email;$('emailBtn').href='mailto:'+C.email;
 $('links').innerHTML=C.links.map(l=>'<a class="pill" href="'+l.url+'" target="_blank" rel="noopener">'+l.label+'</a>').join('');
 $('footName').textContent=C.fullName;
+const sk0=C.skills.map(s=>'<span>'+s+'</span><b>✦</b>').join('');$('track').innerHTML=sk0+sk0+sk0+sk0;
+if(!window.gsap||!window.ScrollTrigger||!window.Lenis){
+  document.body.classList.add('static');
+  const l=$('loader');if(l)l.remove();
+  document.querySelectorAll('.stat b').forEach(b=>b.textContent=b.dataset.n);
+  const m=$('menu');m.innerHTML=[...document.querySelectorAll('section[data-chapter]')].map(s=>'<a href="#'+s.id+'">'+s.dataset.chapter+'</a>').join('');
+  $('menuBtn').onclick=()=>{m.classList.toggle('open');$('menuBtn').textContent=m.classList.contains('open')?'Close':'Menu'};
+  m.onclick=e=>{if(e.target.tagName==='A'){m.classList.remove('open');$('menuBtn').textContent='Menu'}};
+  const b0=$('bg');for(let i=1;i<=10;i++)b0.appendChild(document.createElement('i'));b0.children[1].classList.add('on');
+  return;
+}
+setTimeout(()=>{const l=$('loader');if(l)l.remove()},5000);
 const sk=C.skills.map(s=>'<span>'+s+'</span><b>✦</b>').join('');$('track').innerHTML=sk+sk+sk+sk;
 const menu=$('menu');
 menu.innerHTML=[...document.querySelectorAll('section[data-chapter]')].map(s=>'<a href="#'+s.id+'">'+s.dataset.chapter+'</a>').join('');

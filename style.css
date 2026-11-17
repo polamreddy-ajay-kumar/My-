@@ -74,3 +74,10 @@ html{background:#0B0B0D}
 .bg i:nth-child(8){background-image:url(../assets/bg/wave-8.jpg)}
 .bg i:nth-child(9){background-image:url(../assets/bg/wave-9.jpg)}
 .bg i:nth-child(10){background-image:url(../assets/bg/wave-10.jpg)}
+
+/* fallback when animation libraries fail to load */
+body.static .words span{opacity:1}
+body.static #craft{height:auto;padding:12vh 6vw}
+body.static .craft-track{white-space:normal}
+body.static .craft-track h2{font-size:clamp(2rem,8vw,5rem)}
+body.static .card{display:block;position:static;opacity:1;width:auto;background:none;color:inherit;padding:0}
