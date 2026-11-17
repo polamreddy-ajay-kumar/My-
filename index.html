@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ajay Kumar — Portfolio</title>
+<meta name="description" content="Ajay Kumar — MCA student building full-stack and AI apps.">
+<meta property="og:title" content="Ajay Kumar — Portfolio">
+<meta property="og:description" content="Full-stack and AI projects by Polamreddy Ajay Kumar.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta name="twitter:image" content="assets/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Inter:wght@400;500&family=Instrument+Serif:ital@1&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader"><div class="ld-name" id="ldName"></div><div class="ld-count" id="ldCount">000</div><div class="ld-bar"><i id="ldBar"></i></div></div>
+<div class="bg" id="bg"></div><div class="shade"></div>
+<div class="grain"></div>
+<header><a href="#hero" class="logo" id="hdName"></a><nav><a href="#contact" class="pill lime">Let's talk</a><button class="pill" id="menuBtn">Menu</button></nav></header>
+<div id="menu" aria-hidden="true"></div>
+<div id="chapterPill"><span id="chapNow">Hero</span></div>
+
+<main>
+<section id="hero" data-chapter="Hero">
+  <div class="wordmark" id="wordmark"></div>
+  <img id="cutout" src="assets/me-cutout.png" alt="" onerror="this.style.display='none'">
+  <div class="hero-text">
+    <p class="muted" id="heroHello"></p>
+    <h1 id="heroHead"></h1>
+    <p id="heroPitch" class="pitch"></p>
+    <a href="#work" class="pill lime">View my work</a>
+  </div>
+</section>
+
+<div class="ticker"><div class="track" id="track"></div></div>
+
+<section id="prologue" data-chapter="Prologue">
+  <h2 id="proHead"></h2>
+  <p id="proText" class="words"></p>
+</section>
+
+<section id="about" data-chapter="Who I am">
+  <div class="about-grid">
+    <div><h2 id="abHead"></h2><p id="abText" class="pitch"></p><div class="sig" id="sig"></div></div>
+    <div class="stats" id="stats"></div>
+  </div>
+</section>
+
+<section id="journey" data-chapter="Journey">
+  <div class="j-grid"><h2 class="sticky">The <em>journey</em></h2><ol id="timeline"></ol></div>
+</section>
+
+<section id="work" data-chapter="Selected work">
+  <h2>Selected <em>work</em></h2>
+  <ul id="projects"></ul>
+</section>
+
+<section id="craft" data-chapter="The craft">
+  <div class="craft-pin"><div class="craft-track"><h2 id="craftText"></h2></div></div>
+</section>
+
+<section id="contact" data-chapter="Contact">
+  <p class="muted">Have a project in mind?</p>
+  <h2 class="giant" id="talk">let's <em>talk.</em></h2>
+  <a class="pill lime big" id="emailBtn"></a>
+  <div class="links" id="links"></div>
+</section>
+</main>
+<footer><div class="foot-name" id="footName"></div><div class="foot-row"><span id="localTime"></span><a href="#hero">Back to top ↑</a></div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
